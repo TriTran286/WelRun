@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Noto Serif", serif;
+    }
+  }  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  /* Add to your global CSS file */
+
+  .touch-target {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Ensure stable width for logo */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Better scroll handling for sidebar */
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .overflow-y-auto::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+
+/* Remove tap highlight on mobile */
+@media (hover: none) {
+  .touch-target {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Add to your global CSS file */
+
+/* Touch target sizing */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Safe area insets for modern iOS devices */
+.px-safe {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+.px-safe-right {
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+/* Improved scroll behavior for iOS */
+.overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
+
+/* Add to your global CSS */
+@media (max-width: 640px) {
+  .bg-cover {
+    background-attachment: scroll !important;
+    background-position: center 25% !important;
+  }
+  
+  .typed-cursor {
+    display: inline-block !important;
+    margin-left: -0.1em !important;
+    font-size: 0.9em !important;
+  }
+}
+
+/* Fix iOS height issues */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Optimize text rendering */
+.text-maincolor {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent layout shift during typing */
+.typed-element-wrapper {
+  display: inline-flex !important;
+  justify-content: center;
+  width: 100%;
+  min-height: 1.2em;
+}
+
+/* Add to your global CSS */
+.typed-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.typed-cursor {
+  font-size: inherit;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Fix mobile background */
+@media (max-width: 768px) {
+  .bg-cover {
+    background-attachment: scroll !important;
+  }
+  
+  .typed-cursor {
+    margin-left: -0.1em;
+  }
+}
+
+/* Fix iOS height issues */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
