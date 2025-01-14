@@ -1,34 +1,34 @@
 import React, { useState } from 'react'; // Added useState import
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './Pages/Home';
-import About from './Pages/HomePage-pages/About'                                                                                                                                                                       
-import RunningGuide from './Pages/RunningGuide';
-import Nutrition from './Pages/Plan-and-nutrition/Nutrition'
-import Plan from './Pages/Plan-and-nutrition/Plan'
-import All from './Pages/Plan-and-nutrition/All'
-import Story from './Pages/Story';
-import Contact from './Pages/Contact';
-import PageNotFound from './Pages/PageNotFound';
-import Preloader from './Components/Preloader'
+import HomePage from './Pages/Home.jsx';
+import About from './Pages/HomePage-pages/About.jsx'                                                                                                                                                                       
+import RunningGuide from './Pages/RunningGuide.jsx';
+import Nutrition from './Pages/Plan-and-nutrition/Nutrition.jsx'
+import Plan from './Pages/Plan-and-nutrition/Plan.jsx'
+import All from './Pages/Plan-and-nutrition/All.jsx'
+import Story from './Pages/Story.jsx';
+import Contact from './Pages/Contact.jsx';
+import PageNotFound from './Pages/PageNotFound.jsx';
+import Preloader from './Components/Preloader.jsx'
 
 //Running Plan
-import WalkToRun from './Pages/Plan-and-nutrition/RunningPlan/WalktoRun';
-import FirstFullMarathon from './Pages/Plan-and-nutrition/RunningPlan/FirstFullMarathon';
-import First10k from './Pages/Plan-and-nutrition/RunningPlan/First10k';
-import BeginnerTo5k from './Pages/Plan-and-nutrition/RunningPlan/BeginnerTo5k';
-import FirstHalfMarathon from './Pages/Plan-and-nutrition/RunningPlan/FirstHalfMarathon';
+import WalkToRun from './Pages/Plan-and-nutrition/RunningPlan/WalktoRun.jsx';
+import FirstFullMarathon from './Pages/Plan-and-nutrition/RunningPlan/FirstFullMarathon.jsx';
+import First10k from './Pages/Plan-and-nutrition/RunningPlan/First10k.jsx';
+import BeginnerTo5k from './Pages/Plan-and-nutrition/RunningPlan/BeginnerTo5k.jsx';
+import FirstHalfMarathon from './Pages/Plan-and-nutrition/RunningPlan/FirstHalfMarathon.jsx';
 
 //Nutrition Plan
-import BeforeRunning from './Pages/Plan-and-nutrition/NutritionPlan/BeforeRunning';
-import AfterRunning from './Pages/Plan-and-nutrition/NutritionPlan/AfterRunning';
-import RunningInMorning from './Pages/Plan-and-nutrition/NutritionPlan/RunningInMorning';
-import Carb from './Pages/Plan-and-nutrition/NutritionPlan/Carb';
-import FatLoss from './Pages/Plan-and-nutrition/NutritionPlan/Fatloss';
-import BeginnerMeal from './Pages/Plan-and-nutrition/NutritionPlan/BeginnerMeal';
+import BeforeRunning from './Pages/Plan-and-nutrition/NutritionPlan/BeforeRunning.jsx';
+import AfterRunning from './Pages/Plan-and-nutrition/NutritionPlan/AfterRunning.jsx';
+import RunningInMorning from './Pages/Plan-and-nutrition/NutritionPlan/RunningInMorning.jsx';
+import Carb from './Pages/Plan-and-nutrition/NutritionPlan/Carb.jsx';
+import FatLoss from './Pages/Plan-and-nutrition/NutritionPlan/Fatloss.jsx';
+import BeginnerMeal from './Pages/Plan-and-nutrition/NutritionPlan/BeginnerMeal.jsx';
 
-import Joel from './Pages/Story/Joel'
-import Kipchoge from './Pages/Story/Kipchoge'
-import Hiroaki from './Pages/Story/Hiroaki' 
+import Joel from './Pages/Story/Joel.jsx'
+import Kipchoge from './Pages/Story/Kipchoge.jsx'
+import Hiroaki from './Pages/Story/Hiroaki.jsx' 
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
