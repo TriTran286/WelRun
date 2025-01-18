@@ -85,7 +85,7 @@ const TrainingSchedule = () => {
         'クロストレーニング'
       ]
     },
-    // ... Add all 12 weeks
+    
   ];
 
   const handleWeekClick = (week) => {
