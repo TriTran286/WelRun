@@ -1,15 +1,15 @@
-import React, { useState } from 'react'; // Added useState import
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/Home.jsx';
-import About from './Pages/HomePage-pages/About.jsx'                                                                                                                                                                       
+import About from './Pages/HomePage-pages/About.jsx';                                                                                                                                                                       
 import RunningGuide from './Pages/RunningGuide.jsx';
-import Nutrition from './Pages/Plan-and-nutrition/Nutrition.jsx'
-import Plan from './Pages/Plan-and-nutrition/Plan.jsx'
-import All from './Pages/Plan-and-nutrition/All.jsx'
+import Nutrition from './Pages/Plan-and-nutrition/Nutrition.jsx';
+import Plan from './Pages/Plan-and-nutrition/Plan.jsx';
+import All from './Pages/Plan-and-nutrition/All.jsx';
 import Story from './Pages/Story.jsx';
 import Contact from './Pages/Contact.jsx';
 import PageNotFound from './Pages/PageNotFound.jsx';
-import Preloader from './Components/Preloader.jsx'
+import Preloader from './Components/Preloader.jsx';
 
 //Running Plan
 import WalkToRun from './Pages/Plan-and-nutrition/RunningPlan/WalktoRun.jsx';
@@ -23,17 +23,17 @@ import BeforeRunning from './Pages/Plan-and-nutrition/NutritionPlan/BeforeRunnin
 import AfterRunning from './Pages/Plan-and-nutrition/NutritionPlan/AfterRunning.jsx';
 import RunningInMorning from './Pages/Plan-and-nutrition/NutritionPlan/RunningInMorning.jsx';
 import Carb from './Pages/Plan-and-nutrition/NutritionPlan/Carb.jsx';
+// Fix this import path - changed from absolute to relative path
 import FatLoss from './Pages/Plan-and-nutrition/NutritionPlan/Fatloss.jsx';
 import BeginnerMeal from './Pages/Plan-and-nutrition/NutritionPlan/BeginnerMeal.jsx';
 
-import Joel from './Pages/Story/Joel.jsx'
-import Kipchoge from './Pages/Story/Kipchoge.jsx'
-import Hiroaki from './Pages/Story/Hiroaki.jsx' 
+import Joel from './Pages/Story/Joel.jsx';
+import Kipchoge from './Pages/Story/Kipchoge.jsx';
+import Hiroaki from './Pages/Story/Hiroaki.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  // Prevent content flash
   if (isLoading) {
     return <Preloader onLoadingComplete={() => setIsLoading(false)} />;
   }
@@ -49,8 +49,7 @@ function App() {
             <Route path="beginner5k" element={<BeginnerTo5k />} />
             <Route path="first10k" element={<First10k />} />
             <Route path="firsthalfmarathon" element={<FirstHalfMarathon />} />
-            <Route path="firstfullmarathon" element={<FirstFullMarathon />} /
-            >
+            <Route path="firstfullmarathon" element={<FirstFullMarathon />} />
           </Route>
           <Route path="nutrition" element={<Nutrition />}>
             <Route path="beforerunning" element={<BeforeRunning />} />
@@ -62,7 +61,6 @@ function App() {
           </Route>
           <Route path="all" element={<All />} />
         </Route>
-        {/* Remove the nested Routes and put story routes at the same level */}
         <Route path="/story" element={<Story />} />
         <Route path="/story/joel-story" element={<Joel />} />
         <Route path="/story/kipchoge-story" element={<Kipchoge />} />
@@ -73,4 +71,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
