@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from 'tailwindcss';
 
 export default defineConfig({
-  base: '/WelRun/', // Adjust base path for deployment, if necessary
+  base: '/Welrun/', // Adjust base path for deployment, if necessary
   plugins: [
     react({
       include: "**/*.jsx", // Ensure JSX files are included

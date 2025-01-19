@@ -1,9 +1,9 @@
 {
   "name": "welrun",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
-  "homepage": "npmhttps://tritran286.github.io/WelRun/",
+  "homepage": "https://tritran286.github.io/Welrun/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
