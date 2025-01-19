@@ -21,15 +21,15 @@ const Hiroaki = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="relative h-screen md:h-[32rem]">
+      <div className="relative h-screen md:h-[40rem]">
         <div className="absolute inset-0">
           <img
             src={heroimg}
             alt="田中宏暁教授のランニング"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50" />
-        </div>
+      </div>
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
