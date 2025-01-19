@@ -9,7 +9,7 @@ import {
 import { PiMouseScrollLight } from "react-icons/pi";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import photo from "../assets/running-image/main.jpeg";
+import photo from "../assets/running-image/main-low.jpg";
 import aboutphoto from "../assets/running-image/5.jpeg";
 import whyrunning from "../assets/running-image/3.jpeg";
 

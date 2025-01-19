@@ -127,12 +127,6 @@ const ContactPage = () => {
           </div>
 
           {/* Direct Message Section */}
-          <div className="p-6 bg-gradient-to-b from-green-50 to-green-100/50 border-t border-green-100">
-            <div className="flex items-center justify-center gap-2 text-[#52d406]">
-              <MessageCircle className="w-5 h-5" />
-              <span className="text-sm font-medium">24/7 サポート対応</span>
-            </div>
-          </div>
         </motion.div>
 
         {/* Community Message */}
