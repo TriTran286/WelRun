@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tritran286.github.io/WelRun/",
+  "homepage": "npmhttps://tritran286.github.io/WelRun/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

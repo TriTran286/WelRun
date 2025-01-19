@@ -85,7 +85,7 @@ const ContactPage = () => {
         >
           {/* Brand Header */}
           <div className="bg-gradient-to-r from-[#52d406] to-green-400 px-6 py-12 text-white text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/api/placeholder/400/100')] opacity-10" />
+            <div className="absolute inset-0 opacity-10" />
             <div className="relative">
               <h2 className="text-6xl font-bold mb-2">WelRun</h2>
               <p className="text-white/90">Welcome to Running</p>
@@ -96,7 +96,7 @@ const ContactPage = () => {
           <div className="p-8">
             <div className="space-y-4">
               {socialLinks.map((link, index) => (
-                <motion.a
+                <motion.agit
                   key={link.platform}
                   href={link.url}
                   target="_blank"
@@ -121,7 +121,7 @@ const ContactPage = () => {
                     </div>
                     <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-[#52d406] transition-colors" />
                   </div>
-                </motion.a>
+                </motion.agit>
               ))}
             </div>
           </div>
