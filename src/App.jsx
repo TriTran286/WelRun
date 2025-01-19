@@ -24,7 +24,7 @@ import AfterRunning from './Pages/Plan-and-nutrition/NutritionPlan/AfterRunning.
 import RunningInMorning from './Pages/Plan-and-nutrition/NutritionPlan/RunningInMorning.jsx';
 import Carb from './Pages/Plan-and-nutrition/NutritionPlan/Carb.jsx';
 // Fix this import path - changed from absolute to relative path
-import FatLoss from './Pages/Plan-and-nutrition/NutritionPlan/Fatloss.jsx';
+import FatLoss from './Pages/Plan-and-nutrition/NutritionPlan/FatLoss.jsx';
 import BeginnerMeal from './Pages/Plan-and-nutrition/NutritionPlan/BeginnerMeal.jsx';
 
 import Joel from './Pages/Story/Joel.jsx';
