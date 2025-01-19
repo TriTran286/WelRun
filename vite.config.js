@@ -1,12 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from 'tailwindcss';
+import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/Welrun/', // Adjust base path for deployment, if necessary
+  base: './', // Change this from '/WelRun/' to './'
   plugins: [
     react({
-      include: "**/*.jsx", // Ensure JSX files are included
+      include: "**/*.jsx",
+      jsxRuntime: 'automatic',
+      fastRefresh: true,
     })
   ],
   css: {
@@ -15,23 +18,20 @@ export default defineConfig({
     },
   },
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
     rollupOptions: {
-      input: './index.html', // Entry point for the app
       output: {
-        entryFileNames: 'assets/[name]-[hash].js', // Add hash for cache busting
-        chunkFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]', // Include hash for assets
+        assetFileNames: 'assets/[name][extname]',
+        chunkFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name].js',
       }
     }
   },
-  server: {
-    port: 3000, // Specify port for dev server
-    open: true, // Automatically open in browser
-    strictPort: true, // Exit if port is unavailable
-  },
   resolve: {
     alias: {
-      '@': '/src', // Define `@` as alias for `/src`
+      '@': resolve(__dirname, './src'),
     },
   },
 });
