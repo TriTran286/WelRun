@@ -5,6 +5,7 @@ import Joel from "../assets/running-image/joel-1.jpeg";
 import Kipchoge from '../assets/running-image/Kipchoge.jpg';
 import Storybg from '../assets/running-image/story-background.jpg'
 import Hiroaki from'../assets/running-image/Hiroaki-1.jpg'
+import David from '../assets/running-image/David-1.png'
 
 const Story = () => {
   const navigate = useNavigate();
@@ -35,6 +36,15 @@ const Story = () => {
       image: Joel,
       href: "/story/joel-story",
       readTime: "読む時間 5分",
+      category: "変化の軌跡"
+    },
+    {
+      id: 4,
+      title: "David Goggins:限界を超える意志の力",
+      description: "不可能を可能にした男の驚異的な変革の物語。",
+      image: David,
+      href: "/story/david-story",
+      readTime: "読む時間 8分",
       category: "変化の軌跡"
     }
    

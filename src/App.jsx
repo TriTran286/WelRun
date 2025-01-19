@@ -27,6 +27,7 @@ import Carb from './Pages/Plan-and-nutrition/NutritionPlan/Carb.jsx';
 import FatLoss from './Pages/Plan-and-nutrition/NutritionPlan/FatLoss.jsx';
 import BeginnerMeal from './Pages/Plan-and-nutrition/NutritionPlan/BeginnerMeal.jsx';
 
+import David from './Pages/Story/David.jsx';
 import Joel from './Pages/Story/Joel.jsx';
 import Kipchoge from './Pages/Story/Kipchoge.jsx';
 import Hiroaki from './Pages/Story/Hiroaki.jsx';
@@ -65,6 +66,7 @@ function App() {
         <Route path="/story/joel-story" element={<Joel />} />
         <Route path="/story/kipchoge-story" element={<Kipchoge />} />
         <Route path="/story/hiroaki-story" element={<Hiroaki />} />
+        <Route path="/story/david-story" element={<David />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
